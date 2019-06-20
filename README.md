@@ -11,20 +11,20 @@ that can be used for different values.
 ### `%rel_relcon_<permission>_<text1>_[text2]%`
 <br />
 
-> #### `<permission>`
+> #### `<permission>` (**Required field**)
 The permission that the seconed player should have to be able to see the text you set. <br />
-Supports any PlaceholderAPI placeholder to be used here, but the placeholder should be inside `{}` instead of `%%`. (**Required field**)
+Supports any PlaceholderAPI placeholder to be used here, but the placeholder should be inside `{}` instead of `%%`.
 <br />
 <br />
 
-> #### `<text1>`
+> #### `<text1>` (**Required field**)
 The text that will be displayed if the second player has the permission. <br />
 Supports any PlaceholderAPI placeholder to be used here, but the placeholder should be inside `{}` instead of `%%`
-it also supports new lines, just add `{nl}` to add a new line. (**Required field**)
+it also supports new lines, just add `{nl}` to add a new line.
 <br />
 <br />
 
-> #### `[text2]`
+> #### `[text2]` (**Optional field**)
 The text that will be displayed if the second player doesn't have the permission. <br />
 Supports any PlaceholderAPI placeholder to be used here, but the placeholder should be inside `{}` instead of `%%` 
 it also supports new lines, just add `{nl}` to add a new line.
