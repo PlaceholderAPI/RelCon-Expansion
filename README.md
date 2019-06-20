@@ -1,18 +1,18 @@
 # RelCon-Expansion
 This is a [PlaceholderAPI](http://placeholderapi.com/) expansion that allows you to display "hidden" text for players with a specific
 permission you set in the placeholder itself.
-It only provide relation placeholders, so the plugin you'll use them in should be supporting relation placeholders from PlaceholderAPI.
+It only provides relation placeholders, so the plugin you'll use them in should be supporting relation placeholders from PlaceholderAPI.
 
 ## Placeholders
 
-Theres one placeholder only (So far, if you have any suggestion please let me know by opening a new issue [here](https://github.com/aBo0oDyy/RelCon-Expansion/issues))
+Theres only one placeholder (So far, if you have any suggestion please let me know by opening a new issue [here](https://github.com/aBo0oDyy/RelCon-Expansion/issues))
 that can be used for different values.
 
 ### `%rel_relcon_<permission>_<text1>_[text2]%`
 <br />
 
 > #### `<permission>`
-The premission that the seconed player should have to be able to see the text you set. <br />
+The permission that the seconed player should have to be able to see the text you set. <br />
 Supports any PlaceholderAPI placeholder to be used here, but the placeholder should be inside `{}` instead of `%%`. (**Required field**)
 <br />
 <br />
