@@ -27,7 +27,7 @@ public class RelConExpansion extends PlaceholderExpansion implements Relational,
     }
 
     public Map<String, Object> getDefaults() {
-        Map<String, Object> map = new HashMap<String, Object>();
+        Map<String, Object> map = new HashMap<>();
         map.put("no_permission", "&cYou don't have permission to see this");
         return map;
     }
@@ -37,11 +37,19 @@ public class RelConExpansion extends PlaceholderExpansion implements Relational,
         String[] args = identifier.split("_");
         String noPerm = this.getString("no_permission", "");
 
-        if (args.length == 3) noPerm = args[2].replaceAll("\\{nl}", "\n");
+        if (args.length == 4) noPerm = args[3].replaceAll("\\{nl}", "\n");
 
-        if (args.length >= 2) {
-            if (p2.hasPermission(args[0])) {
-                return args[1].replaceAll("\\{nl}", "\n");
+        if (args.length >= 3) {
+            args[2] = args[2].replaceAll("\\{nl}", "\n");
+            switch (args[0]) {
+                case "viewer":
+                    if (p2.hasPermission(args[1]))
+                        return args[2];
+                    break;
+                case "player":
+                    if (p1.hasPermission(args[1]))
+                        return args[2];
+                    break;
             }
             return noPerm;
         }
