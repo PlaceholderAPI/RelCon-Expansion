@@ -15,12 +15,12 @@ that can be used for different values.
 This field is to pick who should have the permission to display the text.
 
 > `player` is the first player (the sender). <br />
-> `viewer` is the seconed player (the viewer).
+> `viewer` is the second player (the viewer).
 <br />
 <br />
 
 > #### `<permission>` (**Required field**)
-The permission that the seconed player should have to be able to see the text you set. <br />
+The permission that the second player should have to be able to see the text you set. <br />
 Supports any PlaceholderAPI placeholder to be used here, but the placeholder should be inside `{}` instead of `%%`.
 <br />
 <br />
