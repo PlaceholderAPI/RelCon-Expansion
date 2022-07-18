@@ -39,6 +39,18 @@ public class RelConExpansion extends PlaceholderExpansion implements Relational,
 
         if (args.length == 4) noPerm = args[3].replaceAll("\\{nl}", "\n");
 
+        if (args.length == 2) {
+            switch (args[0]) {
+                case "viewer":
+                        return p2.hasPermission(args[1]) ? 'yes' : 'no';
+                    break;
+                case "player":
+                        return p1.hasPermission(args[1]) ? 'yes' : 'no';
+                    break;
+            }
+            return null;
+        }
+
         if (args.length >= 3) {
             args[2] = args[2].replaceAll("\\{nl}", "\n");
             switch (args[0]) {
