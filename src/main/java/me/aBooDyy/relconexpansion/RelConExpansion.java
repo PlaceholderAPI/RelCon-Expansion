@@ -42,10 +42,10 @@ public class RelConExpansion extends PlaceholderExpansion implements Relational,
         if (args.length == 2) {
             switch (args[0]) {
                 case "viewer":
-                        return p2.hasPermission(args[1]) ? 'yes' : 'no';
+                        return p2.hasPermission(args[1]) ? PlaceholderAPIPlugin.booleanTrue() : PlaceholderAPIPlugin.booleanFalse();
                     break;
                 case "player":
-                        return p1.hasPermission(args[1]) ? 'yes' : 'no';
+                        return p1.hasPermission(args[1]) ? PlaceholderAPIPlugin.booleanTrue() : PlaceholderAPIPlugin.booleanFalse();
                     break;
             }
             return null;
